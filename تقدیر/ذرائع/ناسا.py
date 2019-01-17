@@ -3,7 +3,7 @@ from json import JSONDecodeError
 import pandas as pd
 import requests
 from pcse.db import NASAPowerWeatherDataProvider
-from تقدیر import متاغیرات
+from تقدیر import متغیرات
 from تقدیر.ذریعہ import ذریعہ
 
 
@@ -21,7 +21,7 @@ class ناسا(ذریعہ):
         سے = max(ذریعہ_ناسا.first_date, سے)
         تک = min(ذریعہ_ناسا.last_date, تک)
 
-        اعداد_پاندس = pd.DataFrame(columns=list(متاغیرات), index=pd.period_range(سے, تک), dtype=float)
+        اعداد_پاندس = pd.DataFrame(columns=list(متغیرات), index=pd.period_range(سے, تک), dtype=float)
 
         ستون = {
             'بارش': 'RAIN',

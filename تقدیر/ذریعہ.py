@@ -4,7 +4,7 @@ from typing import List
 import numpy as np
 import pandas as pd
 
-from تقدیر.کام import متاغیرات, تاریخ_بنانا
+from تقدیر.کام import متغیرات, تاریخ_بنانا
 from تقدیر.کوائف import کوائف
 
 
@@ -67,7 +67,7 @@ class ذریعہ(object):
         pd.DataFrame:
             ``سے`` اور ``تک`` کے بیچ میں روزانہ کوائف۔
         """
-        اعداد = pd.DataFrame(columns=list(متاغیرات), index=pd.period_range(سے, تک), dtype=float)
+        اعداد = pd.DataFrame(columns=list(متغیرات), index=pd.period_range(سے, تک), dtype=float)
 
         if کوائف_پاندس is None or not len(کوائف_پاندس):
             return اعداد
@@ -88,7 +88,7 @@ class ذریعہ(object):
         return اعداد
 
     @staticmethod
-    def _اشاریہ_پاندس_بنانا(تاریخیں):
+    def _اشاریہ_پانڈا_بنانا(تاریخیں):
         """
         پاندس کا تاریخ کے اشاریہ بناتا ہیے۔
         

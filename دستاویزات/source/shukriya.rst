@@ -1,7 +1,7 @@
 شکریہ
 =====
 
-تقدیر کی ترقی
+تخلیق کار
 -------------
 
 * `ژولیئں ملاغ <https://www.researchgate.net/profile/Julien_Malard>`_
